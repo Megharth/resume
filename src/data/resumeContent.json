@@ -1,0 +1,17 @@
+{
+  "name": "Megharth Lakhataria",
+  "occupation": "Freelance Web Developer",
+  "bio": [
+    "I'm a student looking forward for challenging projects in the field of web development or graphic design. ",
+    "Currently I'm pursuing my B.Tech (IT) from Birla Vishvakarma Mahavidyalaya. ",
+    "I like to take a try on new things and I give my best to achieve the desired target. ",
+    "I'm not planning to take a job, instead, I will be completing my masters. "
+  ],
+  "socialHandles": [
+    {
+      "name": "facebook",
+      "imgUrl": "./src/assets/facebook.svg",
+      "link": "#"
+    }
+  ]
+}
