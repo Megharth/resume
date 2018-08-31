@@ -1,16 +1,18 @@
 <template>
   <div class="frame">
-    <div class="heading">
+    <div class="container">
+      <div class="heading">
       <span>
         <span class="highlight">Skills</span> and <span class="highlight">Technologies</span> worked with
       </span>
-    </div>
-    <div class="icons">
-      <div class="row">
-        <div  v-for="skill in skills" class="col-sm-3">
-          <a :href="skill.link">
-            <img :src="skill.imgUrl" :alt="skill.name">
-          </a>
+      </div>
+      <div class="icons">
+        <div class="row">
+          <div  v-for="skill in skills" class="col-lg-3 col-sm-6">
+            <a :href="skill.link">
+              <img :src="skill.imgUrl" :alt="skill.name">
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <component is="skillComponent"></component>
+    <component is="educationComponent"></component>
   </div>
 </template>
 
 <script>
 import mainComponent from './components/mainComponent'
 import skillComponent from './components/skillComponent'
+import educationComponent from './components/educationComponent'
 
 export default {
   name: 'app',
   components: {
     mainComponent,
-    skillComponent
+    skillComponent,
+    educationComponent
   }
 }
 </script>

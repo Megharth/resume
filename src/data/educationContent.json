@@ -1,0 +1,22 @@
+{
+  "years": [
+    {
+      "name": "Current",
+      "education": "B. Tech, Information Technology",
+      "institute": "Birla Vishvakarma Mahavidyalaya, Vallabh Vidyanagar",
+      "imgUrl": ""
+    },
+    {
+      "name": "2015",
+      "education": "Gujarat State Higher Education Board (GSHEB)",
+      "institute": "Utkarsh School of Excellence, Rajkot",
+      "imgUrl": ""
+    },
+    {
+      "name": "2013",
+      "education": "Gujarat State Education Board (GSEB)",
+      "institute": "Mahan High School, Rajkot",
+      "imgUrl": ""
+    }
+  ]
+}
