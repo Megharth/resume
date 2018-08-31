@@ -2,42 +2,42 @@
   "skills" : [
     {
       "name": "javascript",
-      "imgUrl": "",
+      "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/jspng.png",
       "link": "http://www.javascript.com"
     },
     {
       "name": "Vue js",
-      "imgUrl": "",
+      "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/vue.png",
       "link": "http://www.Vuejs.org"
     },
     {
       "name": "SASS",
-      "imgUrl": "",
+      "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/sass.png",
       "link": "http://www.sass-lang.com"
     },
     {
       "name": "Handlebars Js",
-      "imgUrl": "",
+      "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/handlebars.png",
       "link": "http://www.handlebarsjs.com"
     },
     {
       "name": "Inkscape",
-      "imgUrl": "",
+      "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/inkscape.png",
       "link": "http://www.inkscape.org"
     },
     {
       "name": "Bootstrap",
-      "imgUrl": "",
+      "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/bootstrap.png",
       "link": "http://www.getbootstrap.com"
     },
     {
       "name": "Photography",
-      "imgUrl": "",
+      "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/photographypng.png",
       "link": "#"
     },
     {
       "name": "Guitar",
-      "imgUrl": "",
+      "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/guitar.png",
       "link": "#"
     }
   ]
