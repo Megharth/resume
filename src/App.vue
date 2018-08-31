@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <component is="mainComponent"></component>
+    <component is="skillComponent"></component>
   </div>
 </template>
 
 <script>
-import mainComponent from './components/mainComponent.vue'
+import mainComponent from './components/mainComponent'
+import skillComponent from './components/skillComponent'
 
 export default {
   name: 'app',
   components: {
-    mainComponent
+    mainComponent,
+    skillComponent
   }
 }
 </script>

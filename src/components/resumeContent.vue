@@ -6,9 +6,12 @@
       <span v-for="lines in bio">{{lines}}</span>
     </div>
     <div class="social">
-      <a v-for="handle in socialHandles" :href="handle.link" class="icon">
-        <img :src="handle.imgUrl" :alt="handle.name">
-      </a>
+      <div class="sub-heading">Ping me on following</div>
+      <div class="icon">
+        <a v-for="handle in socialHandles" :href="handle.link">
+          <img :src="handle.imgUrl" :alt="handle.name">
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -25,36 +28,5 @@
 </script>
 
 <style lang="sass" scoped>
-@import url('https://fonts.googleapis.com/css?family=Oswald|Titillium+Web')
-
-.heading
-  padding-top: 20px
-  font-family: 'Oswald', sans-serif
-  letter-spacing: 2px
-  font-size: 45px
-  text-transform: uppercase
-
-#name
-  color: #FF6700
-  font-size: 48px
-  font-weight: bold
-
-.sub-heading
-  font-family: 'Titillium Web', sans-serif
-  font-size: 35px
-
-.bio
-  max-width: 600px
-  text-align: justify
-
-.social
-  margin-top: 30px
-
-  .icon
-    img
-      box-shadow: 5px 0 5px #b0b0b0
-      max-height: 75px
-      border-radius: 50%
-      max-width: 75px
-
+@import "../sass/resumeComponent"
 </style>

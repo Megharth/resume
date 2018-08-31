@@ -1,0 +1,44 @@
+{
+  "skills" : [
+    {
+      "name": "javascript",
+      "imgUrl": "",
+      "link": "http://www.javascript.com"
+    },
+    {
+      "name": "Vue js",
+      "imgUrl": "",
+      "link": "http://www.Vuejs.org"
+    },
+    {
+      "name": "SASS",
+      "imgUrl": "",
+      "link": "http://www.sass-lang.com"
+    },
+    {
+      "name": "Handlebars Js",
+      "imgUrl": "",
+      "link": "http://www.handlebarsjs.com"
+    },
+    {
+      "name": "Inkscape",
+      "imgUrl": "",
+      "link": "http://www.inkscape.org"
+    },
+    {
+      "name": "Bootstrap",
+      "imgUrl": "",
+      "link": "http://www.getbootstrap.com"
+    },
+    {
+      "name": "Photography",
+      "imgUrl": "",
+      "link": "#"
+    },
+    {
+      "name": "Guitar",
+      "imgUrl": "",
+      "link": "#"
+    }
+  ]
+}
