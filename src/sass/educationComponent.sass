@@ -10,7 +10,17 @@
   margin-top: 10px
   padding-bottom: 20px
   .icon
+    margin-top: 2px
     max-width: 120px
 
-.education, .institution
-  font-size: 30px
+.education, .institution, .score
+  font-size: 18px
+
+@media screen and (min-width: 320px) and (max-width: 575px)
+  .sub-heading, .education, .institution, .score
+    text-align: center
+
+@media screen and (min-width: 575px) and (max-width: 991px)
+  .years
+    .icon
+      max-width: 60px

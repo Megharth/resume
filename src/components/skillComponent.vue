@@ -8,7 +8,7 @@
       </div>
       <div class="icons">
         <div class="row">
-          <div  v-for="skill in skills" class="col-lg-3 col-sm-6">
+          <div  v-for="skill in skills" class="img">
             <a :href="skill.link">
               <img :src="skill.imgUrl" :alt="skill.name">
             </a>

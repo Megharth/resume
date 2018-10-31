@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <component is="educationComponent"></component>
+    <component is="skillComponent"></component>
   </div>
 </template>
 

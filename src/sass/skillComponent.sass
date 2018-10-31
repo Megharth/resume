@@ -4,11 +4,31 @@
     color: #FF6700
 
 .icons
-  text-align: center
   margin-top: 40px
-  img
-    margin-top: 30px
-    max-height: 256px
-    max-width: 256px
-    border-radius: 50%
-    box-shadow: 0 0 8px 5px #c0c0c0
+  .row
+    .img
+      margin: 0 auto
+    img
+      margin: 30px
+      max-height: 156px
+      max-width: 156px
+      border-radius: 50%
+      box-shadow: 0 0 8px 5px #c0c0c0
+
+
+@media screen and (min-width: 320px) and (max-width: 575px)
+  .icons
+    display: inline
+    .row
+      img
+        margin: 10px
+        max-height: 80px
+        max-width: 80px
+
+@media screen and (min-width: 575px) and (max-width: 802px)
+  .icons
+    .row
+      img
+        margin: 10px
+        max-height: 100px
+        max-width: 100px
