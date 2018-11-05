@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Titillium+Web')
+@import './variables'
 
+.mainComponent
+  border-left: 8vw solid $accentColor
+  border-right: 8vw solid $accentColor
+  border-bottom: 8vw solid transparent
+  border-top: 8vw solid transparent
+  height: 100%
+  width: 100%
 .frame
   position: relative
-  margin-top: 50px
+  top: 50%
   left: 50%
   transform: translate(-50%, 0%)
   max-width: 1224px
-  box-shadow: 0 0 10px 4px #555
-  background: #EBEBEB
+  box-shadow: 0 0 10px 4px #222
+  background: $backgroundColor
   padding-bottom: 30px
-  margin-bottom: 50px
 
-
-.heading
-  padding-top: 20px
-  font-family: 'Oswald', sans-serif
-  letter-spacing: 2px
-  font-size: 45px
-  text-transform: uppercase
-
-.sub-heading
-  font-family: 'Titillium Web', sans-serif
-  font-size: 30px
+.image
+  max-height: 250px
+  max-width: 250px
+  position: relative
+  top: 50%
+  left: 50%
+  padding-top: 5%
+  transform: translate(-50%, -50%)

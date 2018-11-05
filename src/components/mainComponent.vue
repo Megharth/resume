@@ -1,11 +1,17 @@
 <template>
-  <div class="frame">
-    <div class="row">
-      <div class="col-sm-4">Image</div>
-      <div class="col-sm-8">
-        <resumeContent/>
+  <div class="mainComponent">
+    <div class="left-side"></div>
+    <div class="frame">
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="image img-responsive" src="../assets/Megharth.png" alt="Megharth">
+        </div>
+        <div class="col-sm-8">
+          <resumeContent/>
+        </div>
       </div>
     </div>
+    <div class="right-side"></div>
   </div>
 </template>
 
@@ -18,18 +24,16 @@
     },
     data() {
       return {
-        msg : 'hello world'
+
       }
     }
   }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
+@import "../sass/variables"
 @import "../sass/mainComponent"
-.frame
-  .row
-    margin-left: 0
-    margin-right: 0
+
 
 
 </style>

@@ -1,24 +1,34 @@
+@import '../sass/variables'
+
+.skillComponent
+  background: linear-gradient($primaryColor, $accentColor)
+  position: relative
+  min-height: 100vh
+
 .heading
+  color: $backgroundColor
   text-align: center
   .highlight
-    color: #FF6700
+    color: $accentColor
 
 .icons
-  margin-top: 40px
+  margin-top: 10%
   .row
     .img
       margin: 0 auto
+      outline: 0
+      border: 0
     img
       margin: 30px
       max-height: 156px
       max-width: 156px
       border-radius: 50%
-      box-shadow: 0 0 8px 5px #c0c0c0
+      box-shadow: 3px 3px 3px $primaryColor
 
 
 @media screen and (min-width: 320px) and (max-width: 575px)
   .icons
-    display: inline
+    display: inline-block
     .row
       img
         margin: 10px

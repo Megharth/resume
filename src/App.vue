@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <component is="skillComponent"></component>
+    <mainComponent></mainComponent>
+    <skillComponent></skillComponent>
+    <educationComponent></educationComponent>
   </div>
 </template>
 
@@ -21,7 +23,11 @@ export default {
 
 <style lang="sass">
 @import  url('https://fonts.googleapis.com/css?family=Exo+2')
+@import './sass/variables'
 body
-  background-color: #3A6EA5
+  background-color: $primaryColor
   font-family: 'Exo 2', sans-serif
+
+::-webkit-scrollbar
+  display: none
 </style>

@@ -29,4 +29,5 @@
 
 <style lang="sass" scoped>
 @import "../sass/resumeComponent"
+@import "../sass/mainComponent"
 </style>

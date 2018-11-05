@@ -1,17 +1,19 @@
 <template>
-  <div class="frame">
-    <div class="container">
-      <div class="heading">
-      <span>
-        <span class="highlight">Skills</span> and <span class="highlight">Technologies</span> worked with
-      </span>
-      </div>
-      <div class="icons">
-        <div class="row">
-          <div  v-for="skill in skills" class="img">
-            <a :href="skill.link">
-              <img :src="skill.imgUrl" :alt="skill.name">
-            </a>
+  <div class="skillComponent">
+    <div>
+      <div class="container">
+        <div class="heading">
+          <span>
+            <span class="highlight">Skills</span> and <span class="highlight">Technologies</span> worked with
+          </span>
+        </div>
+        <div class="icons">
+          <div class="row">
+            <div  v-for="skill in skills" class="img">
+              <a :href="skill.link">
+                <img :src="skill.imgUrl" :alt="skill.name">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -30,5 +32,6 @@
 </script>
 
 <style lang="sass" scoped>
+
 @import "../sass/skillComponent"
 </style>
