@@ -3,6 +3,7 @@
     <mainComponent></mainComponent>
     <skillComponent></skillComponent>
     <educationComponent></educationComponent>
+    <projectsComponent></projectsComponent>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import mainComponent from './components/mainComponent'
 import skillComponent from './components/skillComponent'
 import educationComponent from './components/educationComponent'
+import projectsComponent from './components/projectsComponent'
 
 export default {
   name: 'app',
   components: {
     mainComponent,
     skillComponent,
-    educationComponent
+    educationComponent,
+    projectsComponent
   }
 }
 </script>
