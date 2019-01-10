@@ -7,11 +7,11 @@
       <div>Hello I'm <span class="name">Megharth Lakhataria</span></div>
       <div class="occupation">{{ content.occupation }}</div>
     </div>
-    <!--<div class="social">
+    <div class="social">
       <a v-for="handle in content.socialHandles" :href="handle.link">
         <img :src="handle.imgUrl" :alt="handle.name" class="img-fluid">
       </a>
-    </div>-->
+    </div>
     <!--<div class="frame">
       <div class="row">
         <div class="col-sm-4">
