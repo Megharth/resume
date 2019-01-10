@@ -1,9 +1,6 @@
 <template>
   <div id="app">
     <mainComponent></mainComponent>
-    <skillComponent></skillComponent>
-    <educationComponent></educationComponent>
-    <projectsComponent></projectsComponent>
   </div>
 </template>
 

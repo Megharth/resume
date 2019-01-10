@@ -9,7 +9,7 @@
       <div class="sub-heading">Ping me on following</div>
       <div class="icon">
         <a v-for="handle in socialHandles" :href="handle.link">
-          <img :src="handle.imgUrl" :alt="handle.name">
+          <img :src="handle.imgUrl" :alt="handle.name" class="img-fluid">
         </a>
       </div>
     </div>
