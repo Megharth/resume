@@ -1,0 +1,50 @@
+@import "../sass/variables"
+#navbar
+  position: fixed
+  height: 100%
+  width: 100%
+  color: white
+  z-index: 100
+  background: rgba(44, 44, 84,.9)
+.bar
+  position: absolute
+  top: 50%
+  left: 45%
+  font-family: $marker
+  transform: translate(-50%, -50%)
+  list-style-type: none
+  li
+    opacity: 0
+    text-align: center
+    font-size: 36px
+    margin-top: 15px
+    display: block
+    animation: open-up 1s cubic-bezier(0.75,-0.32, 0.07, 1.29) both alternate
+    &:nth-child(1)
+      animation-delay: 0.6s
+    &:nth-child(2)
+      animation-delay: 0.8s
+    &:nth-child(3)
+      animation-delay: 1s
+    &:nth-child(4)
+      animation-delay: 1.2s
+    &:nth-child(5)
+      animation-delay: 1.4s
+    &:hover
+      font-size: 48px
+      transition: all 0.2s ease-out
+
+    a
+      color: white
+      text-decoration: none
+      &:hover
+        color: $accentColor
+
+@keyframes open-up
+  0%
+    transform: translateZ(-800px) rotateX(-150deg)
+    opacity: 0
+
+  100%
+    transform: translateZ(0) rotateX(0deg)
+    opacity: 1
