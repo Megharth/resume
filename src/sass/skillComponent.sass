@@ -1,44 +1,75 @@
 @import '../sass/variables'
 
-.skillComponent
-  background: linear-gradient($primaryColor, $accentColor)
-  position: relative
-  min-height: 100vh
+#skillComponent
+  position: absolute
+  display: block
+  height: 100%
+  width: 100%
+  overflow: hidden
 
-.heading
-  color: $backgroundColor
-  text-align: center
-  .highlight
-    color: $accentColor
+.text
+  position: absolute
+  color: white
+  font-size: 56px
+  width: 400px
+  top: 28%
+
+  left: 3%
+  font-family: $Staatliches
+  font-weight: bold
+  letter-spacing: 10px
+  animation: blur-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530)
+
+@keyframes blur-in
+  0%
+    filter: blur(12px)
+
+  100%
+    filter: blur(0)
+
+.icons-container
+  position: absolute
+  height: 90%
+  width: 80%
+  top: 10%
+  background: #333
+  z-index: -1
+  border-top-left-radius: 5%
+  border-top-right-radius: 5%
+
 
 .icons
   margin-top: 10%
-  .row
-    .img
-      margin: 0 auto
-      outline: 0
-      border: 0
-    img
-      margin: 30px
-      max-height: 156px
-      max-width: 156px
-      border-radius: 50%
-      box-shadow: 3px 3px 3px $primaryColor
+  max-width: 500px
+  margin-left: 50%
+  text-align: center
+.icon
+  height: 100px
+  width: 100px
+  margin: 10px
+  transition: all 0.2s ease-in
+  path
+    stroke: #fff
+    fill: #fff
+    stroke-dasharray: 1800
+    opacity: 10
+    animation: animate-svg 2s cubic-bezier(0.79,-0.17, 0.45, 0.76)  alternate
 
+@keyframes animate-svg
+  0%
+    opacity: 0
+    fill: none
+    stroke-dashoffset: 1800
 
-@media screen and (min-width: 320px) and (max-width: 575px)
-  .icons
-    display: inline-block
-    .row
-      img
-        margin: 10px
-        max-height: 80px
-        max-width: 80px
+  30%
+    opacity: 10
+    fill: none
+  /*stroke-dashoffset: 1800*/
 
-@media screen and (min-width: 575px) and (max-width: 802px)
-  .icons
-    .row
-      img
-        margin: 10px
-        max-height: 100px
-        max-width: 100px
+  90%
+    fill: rgba(255,255,255,0)
+
+  100%
+    opacity: 10
+    fill: rgba(255,255,255,1)
+    stroke-dashoffset: 0

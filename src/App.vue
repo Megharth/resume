@@ -6,7 +6,8 @@
     <transition name="open">
       <navbarComponent v-if="open"></navbarComponent>
     </transition>
-    <mainComponent></mainComponent>
+    <!--<mainComponent></mainComponent>-->
+    <skillComponent></skillComponent>
   </div>
 </template>
 
@@ -67,7 +68,7 @@ body
 
 @keyframes open
   0%
-    transform: translate(1200px, -800px) scale(0)
+    transform: translate(100%, -80%) scale(0)
     opacity: 0
     border-radius: 50%
 
