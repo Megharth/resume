@@ -116,11 +116,12 @@
 </template>
 
 <script>
-  import content from "../data/skillComponent"
   export default {
     name: 'skillComponent',
     data() {
-      return content
+      return {
+
+      }
     }
   }
 </script>

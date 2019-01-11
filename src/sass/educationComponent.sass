@@ -1,34 +1,154 @@
 @import './variables'
 
-.educationComponent
-  min-height: 100vh
-  background-color: $accentColor
-  color: $primaryColor
+#educationComponent
+  position: absolute
+  height: 100%
+  width: 100%
+  color: white
+  overflow-x: hidden
+  margin: 0
+  padding: 0
 .heading
-  text-align: center
-  color: $backgroundColor
+  background: #333
+  position: absolute
+  font-size: 56px
+  top: 10%
+  left: 5%
+  width: 300px
+  .text
+    display: block
+    margin-left: 35%
+    animation: slide-in 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards
 
-.sub-heading
-  color: $backgroundColor
-  font-weight: bold
+@keyframes slide-in
+  0%
+    letter-spacing: 1em
+    opacity: 0
 
-.education-container
-  margin-top: 8%
-.years
-  margin-top: 20px
-  padding-bottom: 20px
-  .icon
-    margin-top: 2px
-    max-width: 120px
+  40%
+    opacity: 0.6
 
-.education, .institution, .score
-  font-size: 18px
+  100%
+    letter-spacing: normal
+    opacity: 1
 
-@media screen and (min-width: 320px) and (max-width: 575px)
-  .sub-heading, .education, .institution, .score
+.timeline
+  position: absolute
+  width: 80%
+  top: 40%
+  left: 50%
+  transform: translate(-50%, -50%)
+  background: white
+  height: 15px
+  border-radius: 15px
+  box-shadow: 0 4px 4px rgba(0,0,0,0.25)
+  animation: expand 0.5s cubic-bezier(0.5,0.5,0.5,0.5)
+.checkpoints
+  position: absolute
+  top: 40.5%
+  left: 50%
+  width: 800px
+  transform: translate(-50%, 0)
+  .checkpoint
+    opacity: 0
+    width: 200px
+    margin: 20px
+    display: inline-block
+    background: white
+    color: #2c2c54
     text-align: center
+    border-radius: 5px
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25)
+    padding: 15px
+    animation: drop 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both
+    &:nth-child(1)
+      animation-delay: 0.5s
+    &:nth-child(2)
+      animation-delay: 1s
+    &:nth-child(3)
+      animation-delay: 1.5s
+    &:last-child
+      .timeline-indicator
+        animation: blink 0.5s cubic-bezier(0.5,0.5,0.5,0.5) alternate infinite
+        animation-delay: 2s
+    .name
+      font-weight: bolder
+      font-size: 24px
+    .education
+      color: #34ace0
+      margin-top: 10px
+    .institute
+      margin-top: 10px
+    .score
+      color: #33d9b2
+      font-weight: bolder
+      margin-top: 10px
+      font-size: 20px
+    .timeline-indicator
+      position: relative
+      box-shadow: 0 4px 4px rgba(0,0,0,0.25)
+      margin-left: 75px
+      height: 20px
+      width: 20px
+      background: white
+      border: 4px solid #33d9b2
+      border-radius: 50%
+      top: -50px
 
-@media screen and (min-width: 575px) and (max-width: 991px)
-  .years
-    .icon
-      max-width: 60px
+@keyframes blink
+  0%
+    background: white
+    border-color: #33d9b2
+
+  100%
+    background: #33d9b2
+    border-color: white
+
+@keyframes expand
+  0%
+    width: 0
+    opacity: 0
+
+  100%
+    width: 80%
+    opacity: 1
+
+@keyframes drop
+  0%
+    transform: rotateX(-100deg)
+    transform-origin: top
+    opacity: 0
+
+  100%
+    transform: rotateX(0deg)
+    transform-origin: top
+    opacity: 1
+
+@keyframes expand-vertical
+  0%
+    height: 0
+    opacity: 0
+  100%
+    height: 100%
+    opacity: 1
+
+@media (min-width: 320px) and (max-width: 885px)
+  .heading
+    font-size: 36px
+    width: 150px
+  .timeline
+    top: 635px
+    height: 750px
+    width: 10px
+    left: 15%
+    animation: expand-vertical 0.5s cubic-bezier(0.5,0.5,0.5,0.5)
+  .checkpoints
+    left: 15%
+    top: 190px
+    transform: translateX(0)
+    .checkpoint
+      display: block
+  .timeline-indicator
+    position: absolute
+    left: -70%
+    transform: translateY(150px)
