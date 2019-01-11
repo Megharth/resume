@@ -1,8 +1,8 @@
 <template>
     <div id="navbar">
         <ul class="bar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
+            <li><a href="#" @click="$emit('changepage', 0)">Home</a></li>
+            <li><a href="#" @click="$emit('changepage', 1)">Skills</a></li>
             <li><a href="#">Education</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>

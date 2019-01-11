@@ -1,5 +1,5 @@
 <template>
-  <div class="mainComponent">
+  <div id="mainComponent">
     <div class="img">
       <img class="image img-fluid" src="../assets/Megharth.png" alt="Megharth">
     </div>

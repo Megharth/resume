@@ -12,9 +12,8 @@
   color: white
   font-size: 56px
   width: 400px
-  top: 28%
-
-  left: 3%
+  top: 20%
+  left: 10%
   font-family: $Staatliches
   font-weight: bold
   letter-spacing: 10px
@@ -64,7 +63,6 @@
   30%
     opacity: 10
     fill: none
-  /*stroke-dashoffset: 1800*/
 
   90%
     fill: rgba(255,255,255,0)
@@ -73,3 +71,25 @@
     opacity: 10
     fill: rgba(255,255,255,1)
     stroke-dashoffset: 0
+
+@media (min-width: 320px) and (max-width: 734px)
+  .text
+    top: 20%
+    font-size: 36px
+    width: 300px
+    left: 5%
+  .icons-container
+    width: 90%
+    height: 85%
+    border-top-right-radius: 0
+    left: 10%
+    top: 15%
+    .icons
+      position: inherit
+      width: 300px
+      padding: 0
+      top: 45%
+      left: -40%
+      .icon
+        height: 50px
+        width: 50px

@@ -128,26 +128,5 @@
 <style lang="sass" scoped>
 @import "../sass/skillComponent"
 
-@media (min-width: 320px) and (max-width: 734px)
-  .text
-    top: 20%
-    font-size: 36px
-    width: 300px
-  .icons-container
-    width: 90%
-    height: 85%
-    border-top-right-radius: 0
-    left: 10%
-    top: 15%
-    .icons
-      /*width: 100%*/
-      position: inherit
-      width: 300px
-      padding: 0
-      top: 45%
-      left: -40%
-      .icon
-        height: 50px
-        width: 50px
-    .icon
+
 </style>
