@@ -1,38 +1,168 @@
 @import "./variables"
 
-.projectsComponent
-  min-height: 100vh
-  background: linear-gradient($accentColor, #345995)
+#projectsComponent
+  background: $primaryColor
+  color: White
+  overflow: hidden !important
+  position: absolute
+  height: 100vh
+  width: 100%
   .heading
-    text-align: center
-    color: white
-  .projects
-    margin-top: 20px
-  .project
-    display: inline-block
-    margin: 25px 10px 10px 10px
-    background: #33032F
-    padding: 10px
-    width: 300px
-    height: 100px
-    border-radius: 5px
-    box-shadow: 2px 2px 2px #222
-    z-index: 1
-    opacity: 0.7
-    .project-title
-      text-align: left
-      font-size: 22px
+    font-size: 72px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-70%, -50%)
+    opacity: 0.8
+    z-index: 10
+    color: rgba(255,255,255,0.6)
+    text-transform: uppercase
+    h1
+      animation: pop-out 1s cubic-bezier(0.64,-0.26, 0.33, 0.63)
+    &:before
+      z-index: 10
+      content: 'projects'
       text-transform: uppercase
-      font-weight: bolder
+      position: absolute
+      top: 2px
+      left: 2px
+      color: white
+
+@keyframes pop-out
+  0%
+    font-size: 72px
+  100%
+    font-size: 2.5rem
+
+.projects
+  font-size: 32px
+  .project
+    position: absolute
+    text-transform: uppercase
+    padding: 5px
+    border-radius: 10px
+    font-weight: bolder
+    transition: all 0.2s ease
+    a
+      color: #f7f1e3
+      text-decoration: none
+      display: block
+    &:hover
+      transform: scale(1.1)
       a
-        color: #D8A47F
-    .language
-      text-align: left
-      color: $headingColor
-    .preview
-      float: right
-      a
-        color: $accentColor
-        img
-          height: 25px
-          width: 25px
+        color: #ff793f
+    &:nth-child(1)
+      left: 10%
+      top: 30%
+    &:nth-child(2)
+      left: 15%
+      top: 40%
+    &:nth-child(3)
+      left: 5%
+      top: 50%
+    &:nth-child(4)
+      left: 60%
+      top: 25%
+    &:nth-child(5)
+      left: 55%
+      top: 35%
+    &:nth-child(6)
+      left: 65%
+      top: 55%
+
+.background
+  .bg-project
+    position: absolute
+    //z-index: -1
+    color: #d1ccc0
+    padding: 5px
+    border-radius: 10px
+    transition: all 0.2s ease-in
+    animation: float 8s cubic-bezier(0.5,0.5,0.5,0.5) infinite alternate
+
+@keyframes float
+  0%
+    transform: translate(10px, 10px)
+  25%
+    transform: translate(10px, 0)
+  50%
+    transform: translate(0, 10px)
+  75%
+    transform: translate(0, 0)
+  100%
+    transform: translate(-10px, -10px)
+
+
+.info
+  position: absolute
+  bottom: 10%
+  left: 50%
+  transform: translateX(-50%)
+  display: block
+  animation: reveal 2s steps(30, end) forwards, blink 0.5s linear alternate infinite
+  border-right: 1px solid white
+  width: 215px
+  white-space: nowrap
+  overflow: hidden
+  a
+    color: white
+    text-decoration: underline
+
+@keyframes reveal
+  0%
+    width: 0
+  100%
+    width: 215px
+
+@keyframes blink
+  0%
+    border-right: 1px solid transparent
+  100%
+    border-right: 1px solid white
+
+
+@media (min-width: 320px) and (max-width: 660px)
+  .heading
+    &:before
+      font-size: 36px
+    h1
+      font-size: 24px
+  .projects
+    font-size: 12px
+    .project
+      &:nth-child(3)
+        top: 55%
+
+  .background
+    .bg-project
+      font-size: 11px
+      animation: float-mini 8s cubic-bezier(0.5,0.5,0.5,0.5) infinite alternate
+
+@media (min-width: 660px) and (max-width: 1160px)
+  .heading
+    &:before
+      font-size: 42px
+    h1
+      font-size: 32px
+
+  .projects
+    font-size: 21px
+    .project
+      &:nth-child(3)
+        top: 55%
+
+  .background
+    .bg-project
+      font-size: 16px
+
+@keyframes float-mini
+  0%
+    transform: translate(4px, 4px)
+  25%
+    transform: translate(4px, 0)
+  50%
+    transform: translate(0, 4px)
+  75%
+    transform: translate(0, 0)
+  100%
+    transform: translate(-4px, -4px)

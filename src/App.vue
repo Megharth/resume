@@ -9,6 +9,7 @@
     <mainComponent v-if="pageNo === 0"></mainComponent>
     <skillComponent v-if="pageNo === 1"></skillComponent>
     <educationComponent v-if="pageNo === 2"></educationComponent>
+    <projectsComponent v-if="pageNo === 3"></projectsComponent>
     <div class="navigator">
       <div class="prev-btn" v-if="pageNo>0">
         <img src="./assets/larrow.png" class="img-fluid" alt="prev" @click="pageNo = pageNo - 1">
@@ -39,7 +40,7 @@ export default {
   data() {
     return {
       open: false,
-      pages: 3,
+      pages: 4,
       pageNo: 0
     }
   },
@@ -53,5 +54,6 @@ export default {
 </script>
 
 <style lang="sass">
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Exo+2|Staatliches')
 @import "./sass/app"
 </style>
