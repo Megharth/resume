@@ -5,7 +5,7 @@
             <li><a href="#" @click="$emit('changepage', 1)">Skills</a></li>
             <li><a href="#" @click="$emit('changepage', 2)">Education</a></li>
             <li><a href="#" @click="$emit('changepage', 3)">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" @click="$emit('changepage', 4)">Contact</a></li>
         </ul>
     </div>
 </template>

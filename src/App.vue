@@ -10,6 +10,7 @@
     <skillComponent v-if="pageNo === 1"></skillComponent>
     <educationComponent v-if="pageNo === 2"></educationComponent>
     <projectsComponent v-if="pageNo === 3"></projectsComponent>
+    <contactComponent v-if="pageNo === 4"></contactComponent>
     <div class="navigator">
       <div class="prev-btn" v-if="pageNo>0">
         <img src="./assets/larrow.png" class="img-fluid" alt="prev" @click="pageNo = pageNo - 1">
@@ -27,6 +28,7 @@ import mainComponent from './components/mainComponent'
 import skillComponent from './components/skillComponent'
 import educationComponent from './components/educationComponent'
 import projectsComponent from './components/projectsComponent'
+import contactComponent from './components/contactComponent'
 
 export default {
   name: 'app',
@@ -35,12 +37,13 @@ export default {
     mainComponent,
     skillComponent,
     educationComponent,
-    projectsComponent
+    projectsComponent,
+    contactComponent
   },
   data() {
     return {
       open: false,
-      pages: 4,
+      pages: 5,
       pageNo: 0
     }
   },
