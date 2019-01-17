@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!--TODO: ADD Comments-->
     <div class="menu" @click="open = !open">
       <div><img src="./assets/menu.png" alt="menu" class="img-fluid"></div>
     </div>
