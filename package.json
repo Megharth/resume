@@ -8,7 +8,7 @@
     "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
-    "bootstrap-vue": "^2.0.0-rc.11",
+    "bootstrap-vue": "^2.14.0",
     "gsap": "^2.0.2",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",
@@ -16,8 +16,8 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-pwa": "^3.0.1",
-    "@vue/cli-service": "^3.0.1",
-    "node-sass": "^4.9.0",
+    "@vue/cli-service": "^4.3.1",
+    "node-sass": "^4.14.1",
     "sass-loader": "^7.0.1",
     "vue-gh-pages": "^1.19.0",
     "vue-template-compiler": "^2.5.17"

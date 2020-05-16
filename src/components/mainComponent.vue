@@ -12,6 +12,9 @@
         <img :src="handle.imgUrl" :alt="handle.name" class="img-fluid">
       </a>
     </div>
+    <div class="resume">
+      Get my <a href="https://github.com/Megharth/resume-text/raw/master/resume.pdf">Resume</a>
+    </div>
   </div>
 </template>
 

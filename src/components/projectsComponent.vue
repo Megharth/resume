@@ -39,11 +39,11 @@ export default {
 
     let bgProjects = document.querySelectorAll('.bg-project')
     let zone = 200/bgProjects.length
-    for(let i=0; i<bgProjects.length/2; i++) {
+    for(let i=0; i<Math.floor(bgProjects.length/2); i++) {
       bgProjects[i].style.top = (Math.random()*20+ 10) + "%"
       bgProjects[i].style.left = (Math.random()*((i+1)*zone - i*zone - 5)+ i*zone) + "%"
     }
-    for(let i=bgProjects.length/2; i<bgProjects.length; i++) {
+    for(let i=Math.floor(bgProjects.length/2); i<bgProjects.length; i++) {
       bgProjects[i].style.bottom = (Math.random()*30+ 15) + "%"
       bgProjects[i].style.left = (Math.random()*(((i+1)-(bgProjects.length/2))*zone - (i-(bgProjects.length/2))*zone - 5)+ (i-(bgProjects.length/2))*zone) + "%"
     }
@@ -54,7 +54,7 @@ export default {
         sort: 'pushed'
       }
     }).then(function(response) {
-      this.repos = response.body
+        this.repos = response.body
     })
   }
 }

@@ -15,6 +15,7 @@
   top: 10%
   left: 5%
   width: 300px
+  box-shadow: -2px 0 10px #000
   .text
     display: block
     margin-left: 35%
@@ -50,10 +51,11 @@
   width: 800px
   transform: translate(-50%, 0)
   .checkpoint
-    opacity: 0
-    width: 200px
-    margin: 20px
+    position: relative
     display: inline-block
+    width: 200px
+    height: 300px
+    margin: 20px
     background: white
     color: #2c2c54
     text-align: center
@@ -63,10 +65,12 @@
     animation: drop 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both
     &:nth-child(1)
       animation-delay: 0.5s
+      top: -23px
     &:nth-child(2)
       animation-delay: 1s
     &:nth-child(3)
       animation-delay: 1.5s
+      top: -46px
     &:last-child
       .timeline-indicator
         animation: blink 0.5s cubic-bezier(0.5,0.5,0.5,0.5) alternate infinite
@@ -80,10 +84,15 @@
     .institute
       margin-top: 10px
     .score
+      position: absolute      
       color: #33d9b2
       font-weight: bolder
       margin-top: 10px
       font-size: 20px
+      bottom: 20px
+      left: 50%
+      width: 100%
+      transform: translate(-50%, 0)
     .timeline-indicator
       position: relative
       box-shadow: 0 4px 4px rgba(0,0,0,0.25)

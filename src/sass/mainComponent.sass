@@ -70,7 +70,7 @@
 .social
   position: absolute
   bottom: 10%
-  left: 5%
+  left: 9%
   max-width: 500px !important
   a
     margin: 5px
@@ -98,7 +98,6 @@
         transform: scale(1.1)
         background: $accentColor
 
-
 //SOCIAL DOCK ANIMATION
 @keyframes open-up
   0%
@@ -108,6 +107,18 @@
   100%
     transform: translateZ(0) rotateX(0deg)
     opacity: 1
+
+// STYLES FOR RESUME SECTION
+.resume
+  position: absolute
+  top: 65%
+  left: 16%
+  transform: translate(-50%, 0)
+  font-size: 26px
+  a
+    color: #ff8200
+    text-decoration: underline
+
 
 //MEDIA QUERIES
 
@@ -125,12 +136,12 @@
     margin: 0 auto
     display: block
     text-align: center
-    max-height: 250px
-    max-width: 250px
+    max-height: 60vw
+    max-width: 60vw
     transform: translateY(35%)
 
   .text
-    bottom: 10%
+    bottom: 20%
     .name
       display: block
       font-size: 1.5em
@@ -138,6 +149,11 @@
     .occupation
       font-size: 2.5em
       font-family: 'Permanent Marker', cursive
+
+  .resume
+    font-size: 22px
+    left: 31%
+    top: 80%
 
   .social
     bottom: 2%
@@ -155,7 +171,7 @@
 @media (min-width: 450px) and (max-width: 930px)
   .text
     position: absolute
-    bottom: 5%
+    bottom: 25%
     max-width: 400px
     display: inline-block
     .name
@@ -166,4 +182,8 @@
       font-family: 'Permanent Marker', cursive
 
   .social
-    left: 55%
+    left: 9%
+
+  .resume
+    top: 75%
+    left: 22%

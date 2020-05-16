@@ -11,27 +11,22 @@
     {
       "name": "Github",
       "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/github.png",
-      "link": "#"
+      "link": "https://github.com/megharth"
     },
     {
       "name": "LinkedIn",
       "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/linkedin.png",
-      "link": "#"
-    },
-    {
-      "name": "Google",
-      "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/google.png",
-      "link": "#"
+      "link": "https://linkedin.com/in/megharth"
     },
     {
       "name": "facebook",
       "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/facebook.png",
-      "link": "#"
+      "link": "https://www.facebook.com/megharth.lakhataria"
     },
     {
       "name": "Instagram",
       "imgUrl": "https://raw.githubusercontent.com/Megharth/megharth.github.io/master/src/assets/instagram.png",
-      "link": "#"
+      "link": "https://www.instagram.com/megharth_lakhataria/"
     }
   ]
 }
