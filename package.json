@@ -2,10 +2,11 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/megharth/resume",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "node ./node_modules/vue-gh-pages/index.js"
+    "deploy": "node ./node_modules/vue-gh-pages/index.js -b gh-pages -m \"Prod build\""
   },
   "dependencies": {
     "bootstrap-vue": "^2.14.0",
